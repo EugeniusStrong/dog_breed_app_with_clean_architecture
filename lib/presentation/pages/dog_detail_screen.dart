@@ -34,7 +34,10 @@ class DogDetailPage extends StatelessWidget {
               height: 12,
             ),
             DogCacheImage(
-                imageUrl: dog.image?.url ?? '', width: 400, height: 400),
+                imageUrl:
+                    'https://cdn2.thedogapi.com/images/${dog.referenceImageId}.jpg',
+                width: 400,
+                height: 400),
             const SizedBox(
               height: 16,
             ),

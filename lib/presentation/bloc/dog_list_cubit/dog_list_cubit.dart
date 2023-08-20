@@ -20,8 +20,8 @@ class DogListCubit extends Cubit<DogState> {
       oldDog = currentState.dogsList;
     }
     emit(DogsLoading(oldDog, isFirstFetch: page == 0));
-    final failureOrPerson = await getAllDogs(PageDogsParams(page: page));
 
+    final failureOrPerson = await getAllDogs(PageDogsParams(page: page));
     failureOrPerson.fold(
         (error) => emit(DogError(message: _mapFailureToMessage(error))), (dog) {
       page++;

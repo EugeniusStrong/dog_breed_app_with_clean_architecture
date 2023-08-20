@@ -14,13 +14,15 @@ class DogsList extends StatelessWidget {
   DogsList({super.key});
 
   void setupScrollController(BuildContext context) {
-    scrollController.addListener(() {
-      if (scrollController.position.atEdge) {
-        if (scrollController.position.pixels != 0) {
-          context.read<DogListCubit>().loadDog();
+    scrollController.addListener(
+      () {
+        if (scrollController.position.atEdge) {
+          if (scrollController.position.pixels != 0) {
+            context.read<DogListCubit>().loadDog();
+          }
         }
-      }
-    });
+      },
+    );
   }
 
   @override

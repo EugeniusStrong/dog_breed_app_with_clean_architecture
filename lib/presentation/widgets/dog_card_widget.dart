@@ -32,7 +32,8 @@ class DogCard extends StatelessWidget {
               child: DogCacheImage(
                 width: 200,
                 height: 200,
-                imageUrl: dog.image?.url ?? '',
+                imageUrl:
+                    'https://cdn2.thedogapi.com/images/${dog.referenceImageId}.jpg',
               ),
             ),
             const SizedBox(
