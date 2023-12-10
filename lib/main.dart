@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
     return BlocProvider<DogListCubit>(
       create: (context) => sl<DogListCubit>()..loadDog(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: ThemeData.dark().copyWith(
           colorScheme: ThemeData.dark().colorScheme.copyWith(
                 background: AppColors.mainBackground,

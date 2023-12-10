@@ -1,16 +1,10 @@
 # dog_breed_app_with_clean_architecture
 
-A new Flutter project.
+# Описание проекта
 
-## Getting Started
+**Практическая работа по изучению чисой архитектуры с использованием свободного API сайта https://www.thedogapi.com/, и стейтменеджмента Bloc Cubit, фрэймворк Flutter.**
 
-This project is a starting point for a Flutter application.
+|            Главное меню             |     Полная информация о породе      |        Кеширование изображений        |
+|:-----------------------------------:|:-----------------------------------:|:-------------------------------------:|
+| ![](./preview_images/main_menu.png) | ![](./preview_images/info_page.png) | ![](./preview_images/casch_image.png) |
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
